@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Membros da Igreja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <img src="img/cropped-fav.png" alt="Logo Paz Church">
+            <h1>Paz Church Recife</h1>
+            <h2>Oferta / Relatório do Life Group</h2>
+        </header>
+        <form>
+            <div class="form-group">
+                <label for="igreja">Igreja:</label>
+                <input type="text" id="igreja" name="igreja">
+            </div>
+            <div class="form-group">
+                <label for="nome-life-group">Nome do Life Group:</label>
+                <input type="text" id="nome-life-group" name="nome-life-group">
+            </div>
+            <div class="form-group">
+                <label for="lider-life-group">Líder do Life Group:</label>
+                <input type="text" id="lider-life-group" name="lider-life-group">
+            </div>
+            <div class="form-group">
+                <label for="supervisor-setor">Supervisor de Setor:</label>
+                <input type="text" id="supervisor-setor" name="supervisor-setor">
+            </div>
+            <div class="form-group">
+                <label for="pastor-rede">Pastor de Rede:</label>
+                <input type="text" id="pastor-rede" name="pastor-rede">
+            </div>
+            <div class="form-group">
+                <label for="data-life-group">Data do Life Group:</label>
+                <input type="date" id="data-life-group" name="data-life-group">
+            </div>
+            <div class="form-group">
+                <label for="valor-oferta">Valor da Oferta:</label>
+                <input type="number" id="valor-oferta" name="valor-oferta" step="0.01">
+            </div>
+        </form>
+
+
+
+        <div class="report-container">
+
+
+            <br><br>
+            <h1>RELATÓRIO</h1>
+
+            <div class="section-container">
+                <div class="left-section">
+                    <section class="membros-life-group">
+                        <div class="field-group">
+                            <span class="field-label">Membros do Life Group:</span>
+                            <input type="number" class="field-input" id="membros-life-group">
+                        </div>
+                        <div class="field-group">
+                            <span class="field-label">Membros presentes no Tadel:</span>
+                            <input type="number" class="field-input" id="convidados-life-group">
+                        </div>
+                    </section>
+                </div>
+                <div class="line-between"></div>
+                <div class="right-section">
+                    <section class="membros-tadel">
+                        <div class="field-group">
+                            <span class="field-label">Membros presentes:</span>
+                            <input type="number" class="field-input" id="membros-tadel">
+                        </div>
+                        <div class="field-group">
+                            <span class="field-label">Convidados presentes:</span>
+                            <input type="number" class="field-input" id="convidados-tadel">
+                        </div>
+                        <div class="field-group">
+                            <span class="field-label">Crianças (0 a 11):</span>
+                            <input type="number" class="field-input" id="criancas-tadel">
+                        </div>
+                        <div class="field-group">
+                            <span class="field-label">Total Presentes:</span>
+                            <input type="number" class="field-input" id="total-tadel">
+                        </div>
+                        <div class="field-group">
+                            <span class="field-label-culto">TOTAL DE PRESENTES NO CULTO:</span>
+                            <input type="number" class="field-input" id="total-culto-geral">
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="liderancas">
+                <div class="field-group">
+                    <span class="field-label">Discipuladores:</span>
+                    <input type="number" class="field-input" id="discipuladores">
+                </div>
+                <div class="field-group">
+                    <span class="field-label">MDA's:</span>
+                    <input type="number" class="field-input" id="mdas">
+                </div>
+                <div class="field-group">
+                    <span class="field-label">GE's:</span>
+                    <input type="number" class="field-input" id="ges">
+                </div>
+            </section>
+
+            <div class="button-container">
+                <button onclick="sendReport()">Enviar</button>
+                <button onclick="printReport()">Imprimir</button>
+            </div>
+
+            <p class="instrucao">Entregar para o seu Pastor de Rede ou pessoa por ele indicada</p>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.report-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.left-section,
+.right-section {
+  width: 45%;
+}
+
+.line-between {
+  width: 10%;
+  height: 60%;
+  position: absolute;
+  left: 50%;
+  top: 30;
+  border-left: 2px solid #000;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.field-group {
+  margin-bottom: 15px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.field-label-culto {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.total-geral {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.total-cul {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.liderancas {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.field-group-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.liderancas .field-group-inline:not(:last-child)::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: -15px;
+}
+
+.liderancas .field-group-inline:nth-child(1) {
+  margin-left: 0;
+}
+
+.liderancas .field-group-inline:nth-child(2) {
+  margin-left: 50px;
+}
+
+.liderancas .field-group-inline:nth-child(3) {
+  margin-left: 50px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.instrucao {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+} */
+
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.report-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.left-section,
+.right-section {
+  width: 45%;
+}
+
+.line-between {
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.field-group {
+  margin-bottom: 15px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.field-label-culto {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.total-geral {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.total-cul {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.liderancas {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.field-group-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.liderancas .field-group-inline:not(:last-child)::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: -15px;
+}
+
+.liderancas .field-group-inline:nth-child(1) {
+  margin-left: 0;
+}
+
+.liderancas .field-group-inline:nth-child(2) {
+  margin-left: 50px;
+}
+
+.liderancas .field-group-inline:nth-child(3) {
+  margin-left: 50px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.instrucao {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 100px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+header h2 {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
